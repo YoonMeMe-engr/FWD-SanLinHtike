@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="yoonmeme.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playwrite+CU:wght@100..400&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Kalnia Glaze", serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+            padding: 20px;
+            border-radius: 40px 10px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            animation: box 1s;
+        }
+
+        .card-img {
+            width: 30%;
+            border-radius: 30px 10px;
+            animation: toRight 1s;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .card-img:hover {
+            transform: rotate(-5deg) scale(1.1);
+        }
+
+        .card-body {
+            width: 600px;
+            margin-left: 20px;
+            animation: toLeft 1.5s;
+        }
+
+        h1 {
+            animation: toUp 1s;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            animation: toLeft 1.5s;
+        }
+
+        @keyframes toRight {
+            0% {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes toLeft {
+            0% {
+                transform: translateX(200px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        a {
+            background-color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            animation: fade 2s;
+        }
+
+        @keyframes toUp {
+            0% {
+                transform: translateY(-200px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes box {
+            0% {
+                transform: translateY(-200px);
+                opacity: 0;
+            }
+
+            25% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            50% {
+                transform: translateY(-200px);
+                opacity: 0;
+            }
+
+            75% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8U6YJRRhzkjAywVqzWDjXYSZ2quJAkaWKg&s" alt="">
+        <div class="card-body">
+            <h1>Poe Ma Mhe Thar</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsam perferendis itaque! Aspernatur deserunt consectetur debitis ullam, neque quas voluptatem impedit quibusdam assumenda, nesciunt incidunt quidem aperiam, eos itaque laboriosam.</p>
+            <a href="#">Call Now</a>
+        </div>
+    </div>
+</body>
+</html>

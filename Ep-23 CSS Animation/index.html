@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="yoonmeme.png">
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 50%;
+            /*animation-name: app;
+            animation-duration: 5s;
+            transform: translateX(200px);
+            animation-delay: 5s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            animation-timing-function: linear;*/
+            animation: app 5s 2 alternate;
+        }
+
+        @keyframes app {
+            0% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(200px);
+                background-color: lightgoldenrodyellow;
+                border-radius: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div class="circle"></div>
+</body>
+</html>
